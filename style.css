@@ -353,3 +353,38 @@ nav a:hover {
     width: 100%;
   }
 }
+
+.parallax {
+  min-height: 275px;
+  background-image: url(ressources/parallax-large-flou.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light-white);
+}
+
+.japanese-text {
+  font-size: var(--fs-64);
+  line-height: 1.2;
+}
+
+.parallax-text {
+  font-size: var(--fs-26);
+}
+
+@media (max-width: 600px) {
+  .parallax {
+    min-height: 200px;
+  }
+
+  .japanese-text {
+    font-size: var(--fs-40);
+  }
+
+  .parallax-text {
+    font-size: var(--fs-18);
+  }
+}
